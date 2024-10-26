@@ -1,3 +1,8 @@
+const searchBtn = document.getElementById('searchBtn');
+const resetBtn = document.getElementById('resetBtn');
+const searchValue = searchBtn.value;
+
+
 // get travel recommendation data from json form
 async function getData() {
   const url = "/travelRecommendation/data/travel_recommendation_api.json";
@@ -14,7 +19,11 @@ async function getData() {
   }
 }
 
-const searchBtn = document.getElementById('searchBtn');
 searchBtn.addEventListener('click', getData);
 
+function resetSearch() {
+    searchValue = '';
+}
+
+resetBtn.addEventListener('click', resetSearch);
 

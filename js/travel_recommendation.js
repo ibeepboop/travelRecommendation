@@ -13,3 +13,8 @@ async function getData() {
     console.error(error.message);
   }
 }
+
+const searchBtn = document.getElementById('searchBtn');
+searchBtn.addEventListener('click', getData);
+
+

@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8"/>
         <title>QuestQuest</title>
-        <link rel="stylesheet" href="/travelRecommendation/css/travel_recommendation.css"/>
+        <link rel="stylesheet" href="../css/travel_recommendation.css"/>
     </head>
     <body>
         <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
             <div>
-                <a href="#">Home</a>
-                <a href="/travelRecommendation/html/about.html">About Us</a>
-                <a href="/travelRecommendation/html/contact.html">Contact Us</a>
-            </div>
-            <div>
-                <input type="search" placeholder="Search"/>
+                <input type="search" placeholder="Search" id="search"/>
                 <input type="submit" value="Search" id="searchBtn"/>
                 <input type="reset" value="Reset" id="resetBtn"/>
             </div>   
@@ -23,6 +24,9 @@
         <div>
             <p>(Introduction text goes here)</p>
         </div>
-    <script src="/travelRecommendation/js/travel_recommendation.js"></script>
+
+        <div id="searchResult">
+        <div>    
+        <script src="../js/travel_recommendation.js"></script>
     </body>
 </html>
